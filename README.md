@@ -3,9 +3,9 @@ Small project illustrating the use of Anaconda's numba jit compiler to speed up 
 
 There are two python files:  
 
-* without.py -- the baseline calculation.  This does the numerical integration, solves for the motions, and creates a plot showing the trajectories. It takes about 94.54 seconds to run on a 3.4 GHz Core i7.
+* without.py -- the basic calculation.  This does the numerical integration, solves for the motions, and creates a plot showing the trajectories. It takes about 94.54 seconds to run on a 3.4 GHz Core i7.
 
-* with.py -- the same calculation modified for the 'numba' JIT compiler.  The changes are literally trivial -- just a matter of adding a single line in front o f most of the functions in program. The calculation is done, the motions are solved for, and a plot is created.  This only takes 46.05 seconds to run on the very same 3.4 GHz Core i7.
+* with.py -- the same calculation modified for Anaconda's Numba JIT compiler.  The changes are literally trivial -- just a matter of adding a single line in front o f most of the functions in program. The calculation is done, the motions are solved for, and a plot is created.  This only takes 46.05 seconds to run on the very same 3.4 GHz Core i7.
 
 Wow!  So just by adding 8 trivial descriptive lines that provided hints to the 'numba' JIT compiler, we were able to more than DOUBLE the speed of the code!
 
